@@ -1,5 +1,7 @@
 # Kindness AI Reply Component - Trial Project
 
+![GitHub version](https://badgen.net/badge/latest%20tag/0.0.1-alpha.0) ![JavaScript](https://badgen.net/badge/JavaScript/es5/yellow?) ![TypeScript](https://badgen.net/badge/TypeScript/5.1.3/blue?) ![Node.js](https://badgen.net/badge/Node.js/20.11/green?) ![React](https://badgen.net/badge/React/18^/cyan?) ![Next.js](https://badgen.net/badge/Next.js/14.1.3/black?)
+
 > This is a trial project by me, Kieren Coetzee, for Kindness.ai to showcase
 > my front-end abilities. The product I've decided to build is an email reply
 > component that allows users to markup replies using a WYSIWYG editor, with
