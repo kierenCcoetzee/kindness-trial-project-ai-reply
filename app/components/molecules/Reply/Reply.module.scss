@@ -1,0 +1,24 @@
+.replyWrapper {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  div {
+    &:nth-child(2) {
+      background-color: white;
+      padding: 24px 12px;
+
+      > *:focus-visible {
+        outline: none;
+      }
+    }
+  }
+
+  ul,
+  ol {
+    li {
+      margin-left: 24px;
+    }
+  }
+}

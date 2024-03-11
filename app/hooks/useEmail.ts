@@ -7,6 +7,7 @@ export default function useEmail() {
 
   return {
     ...emailControllerApi,
+    isActive,
     setIsActive,
   };
 }
