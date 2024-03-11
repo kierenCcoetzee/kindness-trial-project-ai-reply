@@ -1,0 +1,19 @@
+@import "/app/styles/vars";
+
+.menuButton {
+  font-size: 24px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: $dark-grey;
+
+  &:hover:not(:disabled),
+  &.isActive {
+    color: $black;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
