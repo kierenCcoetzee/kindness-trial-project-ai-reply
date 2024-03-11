@@ -17,7 +17,7 @@ const extensions = [
   }),
 ];
 
-export default () => {
+export default function Reply() {
   const handleOnUpdate = ({ editor }: any) => {
     // console.log(editor.getText());
   };
@@ -32,4 +32,4 @@ export default () => {
       </EditorProvider>
     </div>
   );
-};
+}
