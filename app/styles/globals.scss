@@ -1,0 +1,46 @@
+@import "./mixins";
+@import "./typography";
+@import "./vars";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $cream;
+}
+
+// for an intro on how this works, see https://www.youtube.com/watch?v=c13gpBrnGEw&t=839s
+.content-grid,
+.full-width {
+  --content-padding: 24px;
+  display: grid;
+  row-gap: 40px;
+  padding: 40px 0 0 0;
+  grid-template-columns:
+    [full-width-start] minmax(var(--content-padding), 1fr)
+    [content-start] min(
+      calc(100% - (var(--content-padding) * 2)),
+      calc($breakpoints-xl + (var(--content-padding) * 2))
+    )
+    [content-end]
+    minmax(var(--content-padding), 1fr) [full-width-end];
+
+  > :not(.full-width) {
+    grid-column: content;
+  }
+
+  > .full-width {
+    grid-column: full-width;
+  }
+
+  @media screen and (max-width: $breakpoints-lg) {
+    padding: 24px 0;
+    row-gap: 24px;
+
+    &.no-mobile-padding {
+      padding-bottom: 0;
+    }
+  }
+}

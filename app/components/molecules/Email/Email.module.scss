@@ -1,0 +1,32 @@
+@import "/app/styles/vars";
+
+.emailContainer {
+  cursor: pointer;
+  padding: 48px;
+  border-bottom: 1px solid $dark-grey;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .sender {
+    color: $pink;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    svg {
+      path {
+        fill: $pink;
+      }
+    }
+  }
+
+  .subject {
+    font-size: 2rem;
+  }
+
+  .tags {
+    display: flex;
+    gap: 12px;
+  }
+}
