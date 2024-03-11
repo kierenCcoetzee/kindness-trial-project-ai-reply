@@ -3,4 +3,6 @@
 .menuBar {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 12px;
 }

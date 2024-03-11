@@ -10,7 +10,7 @@ export default function MenuButton({
   isActive,
   disabled,
 }: {
-  callback: () => {};
+  callback: () => any;
   icon: FontAwesomeIconProps["icon"];
   isActive?: boolean;
   disabled?: boolean;
