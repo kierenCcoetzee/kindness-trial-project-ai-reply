@@ -1,0 +1,28 @@
+[
+  {
+    "sender": {
+      "name": "Upset Customer",
+      "email": "upset.customer@gmail.com"
+    },
+    "receiver": {
+      "name": "Kieren",
+      "email": "kieren.c.coetzee@gmail.com"
+    },
+    "subject": "Where's the Button!?",
+    "message": "Hi there, I've been looking for the damn button for an age now and can't find it, WHERE IS THE BUTTON!!???",
+    "replies": []
+  },
+  {
+    "sender": {
+      "name": "Happy Customer",
+      "email": "happy.customer@gmail.com"
+    },
+    "receiver": {
+      "name": "Kieren",
+      "email": "kieren.c.coetzee@gmail.com"
+    },
+    "subject": "Your Team is Awesome",
+    "message": "Good morning and happy Friday! I just wanted to let you know that your team is absolutely awesome!!!!",
+    "replies": []
+  }
+]
