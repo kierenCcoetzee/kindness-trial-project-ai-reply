@@ -1,8 +1,15 @@
+@import "/app/styles/vars";
+
 .replyWrapper {
   display: block;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  padding-left: 24px;
+
+  @media screen and (max-width: $breakpoints-lg) {
+    padding-left: unset;
+  }
 
   div {
     &:nth-child(2) {
@@ -20,5 +27,12 @@
     li {
       margin-left: 24px;
     }
+  }
+
+  .aiNotice {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 12px;
   }
 }
