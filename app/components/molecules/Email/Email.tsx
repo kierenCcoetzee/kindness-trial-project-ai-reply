@@ -25,8 +25,8 @@ export default function Email({ email }: { email: EmailType }) {
       <p className={styles.subject}>{email.subject}</p>
       <p className={styles.message}>{email.message}</p>
       <div className={styles.tags}>
-        {tags.map((tag) => (
-          <Tag tag={tag} />
+        {tags.map((tag, index) => (
+          <Tag key={tag.tagString} tag={tag} />
         ))}
       </div>
     </div>

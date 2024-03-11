@@ -1,14 +1,12 @@
+import fs from "fs";
+import path from "path";
+
 export async function readEmailsDTO<T>(): Promise<T> {
   try {
-    const response = await fetch("http://localhost:3000/api/emails.json");
+    const filePath = path.join(process.cwd(), "app", "data", "emails.json");
+    const fileContent = fs.readFileSync(filePath, "utf-8");
+    const data = JSON.parse(fileContent);
 
-    if (!response.ok) {
-      throw new Error(
-        `Failed to fetch the JSON file. Status: ${response.status}`
-      );
-    }
-
-    const data = await response.json();
     return data;
   } catch (error) {
     console.error(
