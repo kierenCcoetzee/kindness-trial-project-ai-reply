@@ -1,0 +1,11 @@
+@import "./vars";
+
+@mixin grid-container($cols: repeat(12, 1fr), $gap: 24px, $gapMobile: 16px) {
+  display: grid;
+  grid-template-columns: $cols;
+  gap: $gap;
+
+  @media screen and (max-width: $breakpoints-md) {
+    gap: $gapMobile;
+  }
+}
